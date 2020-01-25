@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
+  //Using typescript
   clickCounter: number = 0;
   name: string = '';
 
@@ -18,7 +19,7 @@ export class HomeComponent implements OnInit {
   countClick() {
     this.clickCounter += 1;
   }
-
+  //Using this function to set conditionals
   setClasses() {
     let myClasses = {
       active: this.clickCounter > 4, 
